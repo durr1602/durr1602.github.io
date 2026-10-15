@@ -2,9 +2,9 @@
 title: "gyōza: a Snakemake workflow for modular analysis of deep-mutational scanning data"
 type: publication
 date: 2025-09-22
-tags: ["gyoza", "DMS", "pipeline"]
+tags: ["gyoza", "DMS", "pipeline", "CLI", "Snakemake", "Python"]
 publication:
-  authors: ["Romain Durand", "Alicia Pageau", "Christian R. Landry"]
+  authors: ["Romain Durand", "Alicia Pageau", "Christian R Landry"]
   kind: article
   venue: Genetics
   volume: 232
@@ -17,5 +17,4 @@ publication:
     id: "10.1101/2025.02.19.639168"
   code: https://github.com/durr1602/gyoza
 ---
-
-DMS pipeline using Snakemake.
+DMS pipeline using Snakemake. This little tool evolved from a single Jupyter notebook into a modular CLI, accomodating different experimental designs. It is meant for users will relatively little knowledge in bioinformatics, e.g. experimentalists who ran the screen and would want to analyze their data.
