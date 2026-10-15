@@ -10,7 +10,7 @@ publication:
   volume: 233
   number: 1
   pages: iyag055
-  doi: ""
+  doi: "https://doi.org/10.1093/genetics/iyag055"
   preprint:
     server: "biorxiv"
     url: "https://www.biorxiv.org/content/10.1101/2024.07.21.604487"
