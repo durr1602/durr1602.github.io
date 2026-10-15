@@ -2,6 +2,7 @@
 title: "Bioinfo primer"
 date: 2026-08-29T15:47:26-04:00
 draft: false
+hideAuthor: true
 ---
 # Bioinfo primer
 
