@@ -15,6 +15,9 @@ publication:
     server: "biorxiv"
     url: "https://www.biorxiv.org/content/10.1101/2025.02.19.639168"
     id: "10.1101/2025.02.19.639168"
-  code: https://github.com/durr1602/gyoza
+  links:
+      - label: gyōza
+        url: https://github.com/durr1602/gyoza
+        icon: fas fa-terminal
 ---
 DMS pipeline using Snakemake. This little tool evolved from a single Jupyter notebook into a modular CLI, accomodating different experimental designs. It is meant for users will relatively little knowledge in bioinformatics, e.g. experimentalists who ran the screen and would want to analyze their data.
