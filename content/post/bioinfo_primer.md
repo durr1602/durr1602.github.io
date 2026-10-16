@@ -150,7 +150,7 @@ In contrast, each project should have its own workspace, which may contain one o
 
 Language-specific tools like `uv` (Python) or `pak` (R) handle isolated language libraries and are therefore recommended for most small-scale Python or R projects.
 For complex computational workflows requiring system binaries, C libraries, Python, and R in a unified environment, bioinformaticians use cross-platform package managers like `pixi` or `micromamba`, which both leverage the Conda ecosystem.
-These are other cross-platform package managers out there.
+There are other cross-platform package managers out there.
 But the reason why something like Nix is not mainstream in bioinfo is simply because tools have historically accumulated on different repositories.
 
 A final note before we jump into environments: while full system containerization (e.g. using Docker or Apptainer, formerly Singularity) isolates the entire operating system layer, it’s often overkill for day-to-day work.
@@ -196,9 +196,10 @@ Conda arose in the 2010s to solve cross-language dependency management.
 Over the years, the ecosystem has spawned several variants:
 
 - Anaconda: the original, full-featured distribution
-  > [!CAUTION]
-  > The company now enforces commercial licensing terms for large institutions, with academia standing on thin ice, avoid using Anaconda/Miniconda or the `defaults` channel
 - Miniconda: a lightweight Anaconda distribution containing only Python and Conda.
+  {{< callout warning "Caution" >}}
+  The company now enforces commercial licensing terms for large institutions, with academia standing on thin ice, avoid using Anaconda/Miniconda or the `defaults` channel
+  {{< /callout >}}
 - Miniforge: a community-led distribution using `conda-forge` as default channel, avoiding Anaconda’s terms of service
 - Mamba/Micromamba: a high-performance rewrite of Conda replacing the legacy Python dependency solver with a fast C++ solver
 
