@@ -33,10 +33,9 @@ And learning you will if you read and practice actively.
 
 This primer mostly covers best practices regarding:
 
-- How to organize a computational biology project
-- How to install packages
-- How to manage environments
-- How to start tracking files with Git
+- [How to organize a computational biology project](#how-to-organize-computational-biology-projects)
+- [How to manage environments](#environments)
+- [How to start tracking files with Git](#version-control)
 
 I’ve tried to frame some technical details in their respective historical context to help you understand why certain things are the way they are now, which may even give you insight into how they are likely to evolve.
 
@@ -51,7 +50,7 @@ This is not only much quicker on the long run, but also contributes to **reprodu
 The same can be said of data processing.
 While you may find Excel practical for simple tasks, it does not keep track of any modification brought to the data,
 which makes it very easy to introduce errors.
-In general, GUIs simplify some processes, in exchange for tunability.
+In general, GUIs trade control and reproducibility for simplicity.
 
 This primer does not cover the use of external tools/CLIs (e.g. bowtie), with varying installation and usage requirements.
 
@@ -68,8 +67,8 @@ Below is a brief summary:
 
 Basic principles:
 - How files are **organized** and **named** informs a lot on *what* has been done, and *why*
-- Most of what you do, you'll have to do over again
-- Nothing should be duplicated, to ensure proper tracking of changes over time
+- Most of what you do, you'll have to do over and over again
+- Limit duplication, to ensure proper tracking of changes over time
 
 Recommended way to organize files and directories:
 
@@ -84,10 +83,10 @@ Recommended way to organize files and directories:
    - `config/`: optional but very useful, especially for pipelines,
      can contain a sample layout, a `config.yaml` with pipeline parameters, etc
 
-I'm personally not a fan of putting either dates or numbers in filenames.
+I'm personally not a fan of putting dates in filenames.
 The whole point of version control (see corresponding section below) is to make sure we can track versions across time.
 Commits should be the source of truth for *when* a file was produced, especially because it's tightly linked to *how* it was produced.
-Some recommend to number scripts based on their order of execution. But this order may change as the project evolves.
+Some recommend to number scripts based on their order of execution (in some cases it may help simplify execution). But this order may change as the project evolves.
 I would argue it's not straightforward to keep a full history of versions across one or several renaming events.
 There are different ways to communicate a workflow without having to rely on filenames (e.g. documenting the flow diagram).
 
@@ -252,7 +251,7 @@ Wet lab scientists record everything they do daily in their lab notebook (whethe
 Dry lab scientists should follow the same discipline.
 Because our work mostly lives in digital text files, we can leverage tools that automatically track every change across time.
 
-To do this, you should use `git` (or [`jj`](https://github.com/jj-vcs/jj)) from the very first minute you start a project.
+To do this, you should use [`git`](https://git-scm.com/) from the very first minute you start a project.
 Follow these simple steps:
 
 1. Initialize a Git repository right from the start with `git init`
@@ -265,7 +264,7 @@ Follow these simple steps:
 
 An important note on what to track: Git is designed for tracking plain text files (scripts, code, configuration files, and documentation).
 It is not designed as a storage system for large datasets or binary files (including `.docx`, etc).
-Limit your use of Git LFS as much as you can.
+Limit your use of [Git LFS](https://git-lfs.com/) as much as you can.
 
 Do not track:
 - Large data files: raw sequencing reads, large matrices, or model weights
@@ -307,8 +306,8 @@ My colleagues working in R are gradually moving from RStudio to Positron, the la
 
 For teaching purposes, I've found that [Spyder](https://docs.spyder-ide.org/current/index.html) is a lightweight option that's well suited for beginners.
 
-And if you prefer working entirely in a terminal-based editor, there’s always [Neovim](https://neovim.io/).
-While very powerful, terminal-based editors usually have a much steeper learning curve.
+And if you prefer working entirely in a terminal-based editor, there’s always [Neovim](https://neovim.io/) or [Helix](https://helix-editor.com/)
+While very powerful, terminal-based editors usually have a steeper learning curve.
 
 ## Practical use of environments 
 
@@ -328,3 +327,7 @@ How your environments are initialized and recognized depends on your chosen IDE 
 - Jupyter kernel registration: if you use Jupyter notebooks inside an isolated environment, make sure the environment includes the necessary kernel bindings (`ipykernel` for Python, IRkernel for R).
 
 As with most tooling, there is a balance between automatic, out-of-the-box IDE convenience and explicit, manual control over your runtime environment.
+
+## Acknowledgments
+
+Thanks to [@nobe4](https://github.com/nobe4), [Louis-MG](https://github.com/Louis-MG) and [@abodein](https://github.com/abodein) for critical feedback ❤️ 
