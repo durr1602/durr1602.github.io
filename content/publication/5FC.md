@@ -6,7 +6,7 @@ tags: ["cross-feeding", "antifungal", "drug", "5-FC", "flucytosine", "resistance
 publication:
   authors: ["Romain Durand", "Jordan Jalbert-Ross", "Anna Fijarczyk", "Alexandre K Dubé", "Christian R Landry"]
   kind: article
-  venue: PLoS Genetics
+  venue: PLOS Genetics
   volume: 19
   number: 10
   pages: e1011002

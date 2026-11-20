@@ -4,9 +4,9 @@ type: publication
 date: 2025-09-01
 tags: ["FungAMR", "database", "antimicrobial resistance", "fungi"]
 publication:
-  authors: ["Camille Bédard", "Alicia Pageau", "Anna Fijarczyk", "David Mendoza-Salido", "Alejandro J Alcañiz", "Philippe C Després", "Romain Durand", "Samuel Plante", "Emilie MM Alexander", "François D Rouleau"]
+  authors: ["Camille Bédard", "Alicia Pageau", "Anna Fijarczyk", "David Mendoza-Salido", "Alejandro J Alcañiz", "Philippe C Després", "Romain Durand", "Samuel Plante", "Emilie MM Alexander", "François D Rouleau", "David F Jordan", "Adarsh Jay", "Mathieu Giguère", "Mégane Bernier", "Jehoshua Sharma", "Laetitia Maroc", "Nicholas C Gervais", "Anagha CT Menon", "Isabelle Gagnon-Arsenault", "Sibbe Bakker", "Johanna Rhodes", "Philippe J Dufresne", "Amrita Bharat", "Adnane Sellam", "Domenica G De Luca", "Aleeza Gerstein", "Rebecca S Shapiro", "Narciso M Quijada", "Christian R Landry"]
   kind: article
-  venue: Nature microbiology
+  venue: Nature Microbiology
   volume: 10
   number: 9
   pages: 2338-2352

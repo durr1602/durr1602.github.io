@@ -4,13 +4,13 @@ type: publication
 date: 2026-01-01
 tags: ["IncA", "IncC", "conjugation", "plasmids", "SGI1", "mobilizable islands", "relaxosome"]
 publication:
-  authors: ["Florence Deschênes", "Romain Durand", "Kevin T Huguet", "Nicolas Rivard", "Chloé Chagnon", "Doriane Planez", "Antoine Lévénès", "Vincent Burrus"]
+  authors: ["Florence Deschênes", "Romain Durand", "Kévin T Huguet", "Nicolas Rivard", "Chloé Chagnon", "Doriane Planez", "Antoine Lévénès", "Vincent Burrus"]
   kind: article
   venue: Nucleic Acids Research
   volume: 54
   number: 18
   pages: gkag954
-  doi: ""
+  doi: "10.1093/nar/gkag954"
   preprint:
     server: "biorxiv"
     url: "https://www.biorxiv.org/content/10.1101/2025.04.21.649884"

@@ -4,7 +4,7 @@ type: publication
 date: 2026-01-01
 tags: ["echinocandin", "resistance", "Saccharomyces cerevisiae", "mutational landscape", "DMS", "Fks", "antifungal"]
 publication:
-  authors: ["Romain Durand", "Alexandre G Torbey", "Mathieu Giguere", "Alicia Pageau", "Alexandre K Dubé", "Patrick Lague", "Christian R Landry"]
+  authors: ["Romain Durand", "Alexandre G Torbey", "Mathieu Giguère", "Alicia Pageau", "Alexandre K Dubé", "Patrick Lagüe", "Christian R Landry"]
   kind: article
   venue: Genetics
   volume: 233
