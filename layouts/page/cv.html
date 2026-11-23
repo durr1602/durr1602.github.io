@@ -1,4 +1,31 @@
 {{ define "main" }}
+<style>
+    dd {
+        position: relative;
+        min-block-size: 32px;
+        margin: 0 0 0 0.5rem;
+        border-inline-start: 2px solid #bbb;
+        padding: 0.5rem 0 0.5rem calc(48px + 1.75rem);
+    }
+
+    dd:not(:last-child) {
+        padding-bottom: 2rem;
+    }
+
+    dd>p {
+        margin: 0;
+    }
+
+    .logo {
+        position: absolute;
+        inset-block-start: 0.5rem;
+        inset-inline-start: 1rem;
+        box-sizing: border-box;
+        border-radius: 6px;
+        transition: background-color 0.2s ease, padding 0.2s ease;
+        background-color: var(--bs-body-bg);
+    }
+</style>
 <div class="container" role="main">
     <div class="row">
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
@@ -11,9 +38,9 @@
                     <dd>
                         <p>
                             Research professional in bioinformatics in
-                            <a href="https://compbio.ca">the lab of Arnaud Droit</a> at the
-                            <a href="https://ulaval.ca">
-                                <img class="logo" src="{{ " img/cv/crchuq.png" | relURL }}" width="32" height="32"
+                            <a href="https://compbio.ca/">the lab of Arnaud Droit</a> at the
+                            <a href="https://www.crchudequebec.ulaval.ca/en/">
+                                <img class="logo" src="{{ "img/cv/crchuq.svg" | relURL }}" width="48" height="32"
                                     alt="CRCHUQ logo">
                                 CRCHUQ</a>.
                         </p>
@@ -27,9 +54,9 @@
                     <dd>
                         <p>
                             Postdoctoral fellow in
-                            <a href="https://ulaval.ca">the lab of Christian Landry</a> at the
-                            <a href="https://ulaval.ca">
-                                <img class="logo" src="{{ " img/cv/ibis.png" | relURL }}" width="32" height="32"
+                            <a href="https://landrylab.ibis.ulaval.ca/">the lab of Christian Landry</a> at the
+                            <a href="https://www.ibis.ulaval.ca/">
+                                <img class="logo" src="{{ "img/cv/ibis.png" | relURL }}" width="48" height="32"
                                     alt="IBIS logo">
                                 IBIS</a>.
                         </p>
@@ -46,9 +73,9 @@
                     <dt>2017-01 to 2020-12</dt>
                     <dd>
                         <p>
-                            PhD in <a href="https://wordpress.com">the lab of Vincent Burrus</a> at
+                            PhD in <a href="https://laboburrus.wordpress.com/">the lab of Vincent Burrus</a> at
                             <a href="https://usherbrooke.ca">
-                                <img class="logo" src="{{ " img/cv/udes.png" | relURL }}" width="32" height="32"
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}" width="48" height="32"
                                     alt="Université de Sherbrooke logo">
                                 UdS</a>.
                         </p>
@@ -61,9 +88,9 @@
                     <dt>2015-08 to 2016-12</dt>
                     <dd>
                         <p>
-                            MSc in <a href="https://wordpress.com">the lab of Vincent Burrus</a> at
+                            MSc in <a href="https://laboburrus.wordpress.com">the lab of Vincent Burrus</a> at
                             <a href="https://usherbrooke.ca">
-                                <img class="logo" src="{{ " img/cv/udes.png" | relURL }}" width="32" height="32"
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}" width="48" height="32"
                                     alt="Université de Sherbrooke logo">
                                 UdS</a>.
                         </p>
@@ -73,8 +100,8 @@
                     <dd>
                         <p>
                             BSc-MSc equivalent (Biological Engineering) at the
-                            <a href="https://utc.fr">
-                                <img class="logo" src="{{ " img/cv/utc.png" | relURL }}" width="32" height="32"
+                            <a href="https://www.utc.fr">
+                                <img class="logo" src="{{ "img/cv/utc.jpg" | relURL }}" width="48" height="32"
                                     alt="UTC logo">
                                 Université de Technologie de Compiègne</a>.
                         </p>
@@ -89,7 +116,7 @@
                         <p>
                             Gene therapy in the lab of Philippe Moullier at
                             <a href="https://inserm.fr">
-                                <img class="logo" src="{{ " img/cv/inserm.png" | relURL }}" width="32" height="32"
+                                <img class="logo" src="{{ "img/cv/inserm.png" | relURL }}" width="48" height="32"
                                     alt="INSERM logo">
                                 INSERM Nantes</a>.
                         </p>
@@ -99,8 +126,8 @@
                     <dd>
                         <p>
                             Plant cell wall biology in the lab of Kazuhiko Nishitani at
-                            <a href="https://tohoku.ac.jp">
-                                <img class="logo" src="{{ " img/cv/tohoku.png" | relURL }}" width="32" height="32"
+                            <a href="https://www.tohoku.ac.jp/en/">
+                                <img class="logo" src="{{ "img/cv/tohoku.jpg" | relURL }}" width="48" height="32"
                                     alt="Tohoku University logo">
                                 Tohoku University</a>.
                         </p>
@@ -110,9 +137,9 @@
                     <dd>
                         <p>
                             Conjugative plasmids in
-                            <a href="https://wordpress.com">the lab of Vincent Burrus</a> at
+                            <a href="https://laboburrus.wordpress.com">the lab of Vincent Burrus</a> at
                             <a href="https://usherbrooke.ca">
-                                <img class="logo" src="{{ " img/cv/udes.png" | relURL }}" width="32" height="32"
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}" width="48" height="32"
                                     alt="Université de Sherbrooke logo">
                                 UdS</a>.
                         </p>
