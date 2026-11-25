@@ -1,0 +1,149 @@
+{{ define "main" }}
+<style>
+    dd {
+        position: relative;
+        min-block-size: 32px;
+        margin: 0 0 0 0.5rem;
+        border-inline-start: 2px solid #bbb;
+        padding: 0.5rem 0 0.5rem calc(48px + 1.75rem);
+    }
+
+    dd:not(:last-child) {
+        padding-bottom: 2rem;
+    }
+
+    dd>p {
+        margin: 0;
+    }
+
+    .logo {
+        position: absolute;
+        inset-block-start: 0.5rem;
+        inset-inline-start: 1rem;
+        padding: 0.3em;
+        width: 48px;
+        box-sizing: border-box;
+        background-color: var(--bs-body-bg);
+    }
+</style>
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <div class="cv-timeline">
+
+                <h2>Recent work experience</h2>
+
+                <dl>
+                    <dt>2026-04 onwards</dt>
+                    <dd>
+                        <p>
+                            Research professional in bioinformatics in
+                            <a href="https://compbio.ca/">the lab of Arnaud Droit</a> at the
+                            <a href="https://www.crchudequebec.ulaval.ca/en/">
+                                <img class="logo" src="{{ "img/cv/crchuq.svg" | relURL }}" alt="CRCHUQ logo">
+                                CRCHUQ</a>.
+                        </p>
+                        <details>
+                            <summary>Research focus</summary>
+                            <p>Spatial transcriptomics.</p>
+                        </details>
+                    </dd>
+
+                    <dt>2021-01 to 2026-03</dt>
+                    <dd>
+                        <p>
+                            Postdoctoral fellow in
+                            <a href="https://landrylab.ibis.ulaval.ca/">the lab of Christian Landry</a> at the
+                            <a href="https://www.ibis.ulaval.ca/">
+                                <img class="logo" src="{{ "img/cv/ibis.png" | relURL }}" alt="IBIS logo">
+                                IBIS</a>.
+                        </p>
+                        <details>
+                            <summary>Research &amp; teaching</summary>
+                            <p>Molecular evolution. Antifungal resistance. TA Molecular Genetics.</p>
+                        </details>
+                    </dd>
+                </dl>
+
+                <h2>Academic training</h2>
+
+                <dl>
+                    <dt>2017-01 to 2020-12</dt>
+                    <dd>
+                        <p>
+                            PhD in <a href="https://laboburrus.wordpress.com/">the lab of Vincent Burrus</a> at
+                            <a href="https://usherbrooke.ca">
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}"
+                                    alt="Université de Sherbrooke logo">
+                                UdS</a>.
+                        </p>
+                        <details>
+                            <summary>Research &amp; teaching</summary>
+                            <p>Bacterial mobile genetic elements. Antibiotic resistance. TA Biochem, microbiology.</p>
+                        </details>
+                    </dd>
+
+                    <dt>2015-08 to 2016-12</dt>
+                    <dd>
+                        <p>
+                            MSc in <a href="https://laboburrus.wordpress.com">the lab of Vincent Burrus</a> at
+                            <a href="https://usherbrooke.ca">
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}"
+                                    alt="Université de Sherbrooke logo">
+                                UdS</a>.
+                        </p>
+                    </dd>
+
+                    <dt>2010-08 to 2015-07</dt>
+                    <dd>
+                        <p>
+                            BSc-MSc equivalent (Biological Engineering) at the
+                            <a href="https://www.utc.fr">
+                                <img class="logo" src="{{ "img/cv/utc.jpg" | relURL }}" alt="UTC logo">
+                                Université de Technologie de Compiègne</a>.
+                        </p>
+                    </dd>
+                </dl>
+
+                <h2>Internships</h2>
+
+                <dl>
+                    <dt>2015-02 to 2015-07</dt>
+                    <dd>
+                        <p>
+                            Gene therapy in the lab of Philippe Moullier at
+                            <a href="https://inserm.fr">
+                                <img class="logo" src="{{ "img/cv/inserm.png" | relURL }}" alt="INSERM logo">
+                                INSERM Nantes</a>.
+                        </p>
+                    </dd>
+
+                    <dt>2014-09 to 2015-02</dt>
+                    <dd>
+                        <p>
+                            Plant cell wall biology in the lab of Kazuhiko Nishitani at
+                            <a href="https://www.tohoku.ac.jp/en/">
+                                <img class="logo" src="{{ "img/cv/tohoku.jpg" | relURL }}"
+                                    alt="Tohoku University logo">
+                                Tohoku University</a>.
+                        </p>
+                    </dd>
+
+                    <dt>2013-09 to 2014-02</dt>
+                    <dd>
+                        <p>
+                            Conjugative plasmids in
+                            <a href="https://laboburrus.wordpress.com">the lab of Vincent Burrus</a> at
+                            <a href="https://usherbrooke.ca">
+                                <img class="logo" src="{{ "img/cv/uds.svg" | relURL }}"
+                                    alt="Université de Sherbrooke logo">
+                                UdS</a>.
+                        </p>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

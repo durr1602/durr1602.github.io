@@ -9,6 +9,7 @@ theme = 'beautifulhugo'
   dateFormat = ":date_long"
   since = 2026
   socialShare = true
+  custom_css = ["css/custom.css"]
 
 [[Params.bigimg]]
   src = "/img/triangle.jpg"
